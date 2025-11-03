@@ -13,6 +13,7 @@ const RaceCard: React.FC<RaceCardProps> = ({ race }) => {
           className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110"
           src={race.imageUrl}
           alt={`Imagem da raça ${race.name}`}
+          referrerPolicy="no-referrer"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
       </div>
