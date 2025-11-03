@@ -1,5 +1,4 @@
-
-import { Race } from './types';
+import { Race } from './types.ts';
 
 export const RACES: Race[] = [
   {

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Race } from '../types';
+import { Race } from '../types.ts';
 
 interface RaceCardProps {
   race: Race;

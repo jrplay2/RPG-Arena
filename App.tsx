@@ -1,7 +1,6 @@
-
 import React from 'react';
-import RaceCard from './components/RaceCard';
-import { RACES } from './constants';
+import RaceCard from './components/RaceCard.tsx';
+import { RACES } from './constants.ts';
 
 function App() {
   return (
