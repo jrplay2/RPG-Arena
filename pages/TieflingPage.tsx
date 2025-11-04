@@ -1,0 +1,106 @@
+import React from 'react';
+
+interface TieflingPageProps {
+  onBack: () => void;
+}
+
+const TieflingPage: React.FC<TieflingPageProps> = ({ onBack }) => {
+  return (
+    <div className="min-h-screen bg-slate-900 text-white font-sans p-4 sm:p-8">
+      <main className="container mx-auto">
+        <button
+          onClick={onBack}
+          className="mb-8 bg-cyan-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-cyan-600 transition-colors duration-300 flex items-center space-x-2"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+          </svg>
+          <span>Voltar para a Galeria</span>
+        </button>
+
+        <header className="mb-10">
+            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+            Tiefling
+            </h1>
+        </header>
+
+        <div className="space-y-12">
+          <section>
+            <h2 className="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">História</h2>
+            <p className="text-slate-300 leading-relaxed text-lg">
+              Tieflings carregam em seu sangue a marca de um pacto infernal feito por seus ancestrais. Nascidos com chifres, caudas e uma aparência exótica que revela sua linhagem, eles são muitas vezes vistos com medo e desconfiança. Essa marginalização forçou os Tieflings a desenvolverem uma forte independência, astúcia e uma poderosa força de vontade. Eles são naturalmente inclinados a magias sombrias e manipulação, usando seu carisma peculiar e sua inteligência para navegar em um mundo que frequentemente os rejeita.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Atributos (15 pontos)</h2>
+            <ul className="list-disc list-inside text-slate-300 space-y-2 text-lg">
+              <li><strong>Força de Vontade:</strong> 4</li>
+              <li><strong>Inteligência:</strong> 4</li>
+              <li><strong>Aparência:</strong> 3</li>
+              <li><strong>Destreza:</strong> 2</li>
+              <li><strong>Vigor:</strong> 1</li>
+              <li><strong>Força:</strong> 1</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Perícias (50 pontos)</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2 text-slate-300 text-lg">
+                <span><strong>Conhecimento (Arcano):</strong> 6</span>
+                <span><strong>Intimidação:</strong> 5</span>
+                <span><strong>Manha (Lábia):</strong> 5</span>
+                <span><strong>Persuasão:</strong> 4</span>
+                <span><strong>Percepção:</strong> 4</span>
+                <span><strong>Investigação:</strong> 3</span>
+                <span><strong>Linguística:</strong> 3</span>
+                <span><strong>Conhecimento (Geral):</strong> 3</span>
+                <span><strong>Furtividade:</strong> 2</span>
+                <span><strong>Armas Brancas:</strong> 2</span>
+                <span><strong>Ladinagem:</strong> 2</span>
+                <span><strong>Empatia:</strong> 2</span>
+                <span><strong>Atletismo:</strong> 1</span>
+                <span><strong>Armas de Projétil:</strong> 1</span>
+                <span><strong>Cavalgar:</strong> 1</span>
+                <span><strong>Etiqueta:</strong> 1</span>
+                <span><strong>Liderança:</strong> 1</span>
+                <span><strong>Herbalismo:</strong> 1</span>
+                <span><strong>Ofício:</strong> 1</span>
+                <span><strong>Sobrevivência:</strong> 1</span>
+                <span><strong>Medicina:</strong> 1</span>
+            </div>
+          </section>
+
+          <section className="grid lg:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-3xl font-bold text-green-400 mb-4 border-b-2 border-green-500/30 pb-2">Vantagens</h2>
+              <ul className="list-disc list-inside text-slate-300 space-y-3 text-lg">
+                <li><strong>Força de Vontade Superior:</strong> Sua herança lhes confere uma mente forte e resistente a controle mental e intimidação.</li>
+                <li><strong>Afinidade com Magias Sombrias:</strong> Possuem uma facilidade natural para aprender e conjurar feitiços ligados às sombras e ao fogo infernal.</li>
+                <li><strong>Língua Demoníaca:</strong> Nascem com o conhecimento do idioma infernal, além de sua língua nativa.</li>
+                <li><strong>Resistência ao Fogo:</strong> Sua linhagem lhes concede uma resistência natural ao dano por fogo.</li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-3xl font-bold text-red-400 mb-4 border-b-2 border-red-500/30 pb-2">Desvantagens</h2>
+              <ul className="list-disc list-inside text-slate-300 space-y-3 text-lg">
+                <li><strong>Estigma Social:</strong> Sua aparência demoníaca os torna alvo de preconceito, medo e perseguição em muitas sociedades.</li>
+                <li><strong>Fisicamente Frágeis:</strong> Não possuem grande vigor ou força física, tornando-os dependentes de sua astúcia ou magia para se defenderem.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2 className="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Afinidades</h2>
+            <div className="text-slate-300 space-y-2 text-lg">
+              <p><strong className="text-green-400">Melhores:</strong> Goblin Civilizado, Espreitador das Sombras.</p>
+              <p><strong className="text-red-400">Piores:</strong> Anão, Draconato.</p>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  );
+};
+
+export default TieflingPage;
