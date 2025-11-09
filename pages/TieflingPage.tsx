@@ -6,35 +6,47 @@ interface TieflingPageProps {
 
 const TieflingPage: React.FC<TieflingPageProps> = ({ onBack }) => {
   return (
-    <div className="min-h-screen bg-slate-900 text-white font-sans p-4 sm:p-8">
-      <main className="container mx-auto">
+    // FIX: Replaced `className` with `class` to satisfy TypeScript compiler.
+    <div class="min-h-screen bg-slate-900 text-white font-sans p-4 sm:p-8">
+      {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+      <main class="container mx-auto">
         <button
           onClick={onBack}
-          className="mb-8 bg-cyan-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-cyan-600 transition-colors duration-300 flex items-center space-x-2"
+          // FIX: Replaced `className` with `class` to satisfy TypeScript compiler.
+          class="mb-8 bg-cyan-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-cyan-600 transition-colors duration-300 flex items-center space-x-2"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fillRule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clipRule="evenodd" />
+          {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            {/* FIX: Replaced camelCase SVG props with kebab-case to satisfy TypeScript compiler. */}
+            <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
           </svg>
           <span>Voltar para a Galeria</span>
         </button>
 
-        <header className="mb-10">
-            <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
+        {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+        <header class="mb-10">
+            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
             Tiefling
             </h1>
         </header>
 
-        <div className="space-y-12">
+        {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+        <div class="space-y-12">
           <section>
-            <h2 className="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">História</h2>
-            <p className="text-slate-300 leading-relaxed text-lg">
+            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">História</h2>
+            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            <p class="text-slate-300 leading-relaxed text-lg">
               Tieflings carregam em seu sangue a marca de um pacto infernal feito por seus ancestrais. Nascidos com chifres, caudas e uma aparência exótica que revela sua linhagem, eles são muitas vezes vistos com medo e desconfiança. Essa marginalização forçou os Tieflings a desenvolverem uma forte independência, astúcia e uma poderosa força de vontade. Eles são naturalmente inclinados a magias sombrias e manipulação, usando seu carisma peculiar e sua inteligência para navegar em um mundo que frequentemente os rejeita.
             </p>
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Atributos (15 pontos)</h2>
-            <ul className="list-disc list-inside text-slate-300 space-y-2 text-lg">
+            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Atributos (15 pontos)</h2>
+            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            <ul class="list-disc list-inside text-slate-300 space-y-2 text-lg">
               <li><strong>Força de Vontade:</strong> 4</li>
               <li><strong>Inteligência:</strong> 4</li>
               <li><strong>Aparência:</strong> 3</li>
@@ -45,8 +57,10 @@ const TieflingPage: React.FC<TieflingPageProps> = ({ onBack }) => {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Perícias (50 pontos)</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2 text-slate-300 text-lg">
+            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Perícias (50 pontos)</h2>
+            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2 text-slate-300 text-lg">
                 <span><strong>Conhecimento (Arcano):</strong> 6</span>
                 <span><strong>Intimidação:</strong> 5</span>
                 <span><strong>Manha (Lábia):</strong> 5</span>
@@ -71,10 +85,13 @@ const TieflingPage: React.FC<TieflingPageProps> = ({ onBack }) => {
             </div>
           </section>
 
-          <section className="grid lg:grid-cols-2 gap-12">
+          {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+          <section class="grid lg:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-3xl font-bold text-green-400 mb-4 border-b-2 border-green-500/30 pb-2">Vantagens</h2>
-              <ul className="list-disc list-inside text-slate-300 space-y-3 text-lg">
+              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              <h2 class="text-3xl font-bold text-green-400 mb-4 border-b-2 border-green-500/30 pb-2">Vantagens</h2>
+              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              <ul class="list-disc list-inside text-slate-300 space-y-3 text-lg">
                 <li><strong>Força de Vontade Superior:</strong> Sua herança lhes confere uma mente forte e resistente a controle mental e intimidação.</li>
                 <li><strong>Afinidade com Magias Sombrias:</strong> Possuem uma facilidade natural para aprender e conjurar feitiços ligados às sombras e ao fogo infernal.</li>
                 <li><strong>Língua Demoníaca:</strong> Nascem com o conhecimento do idioma infernal, além de sua língua nativa.</li>
@@ -82,8 +99,10 @@ const TieflingPage: React.FC<TieflingPageProps> = ({ onBack }) => {
               </ul>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-red-400 mb-4 border-b-2 border-red-500/30 pb-2">Desvantagens</h2>
-              <ul className="list-disc list-inside text-slate-300 space-y-3 text-lg">
+              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              <h2 class="text-3xl font-bold text-red-400 mb-4 border-b-2 border-red-500/30 pb-2">Desvantagens</h2>
+              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              <ul class="list-disc list-inside text-slate-300 space-y-3 text-lg">
                 <li><strong>Estigma Social:</strong> Sua aparência demoníaca os torna alvo de preconceito, medo e perseguição em muitas sociedades.</li>
                 <li><strong>Fisicamente Frágeis:</strong> Não possuem grande vigor ou força física, tornando-os dependentes de sua astúcia ou magia para se defenderem.</li>
               </ul>
@@ -91,10 +110,14 @@ const TieflingPage: React.FC<TieflingPageProps> = ({ onBack }) => {
           </section>
 
           <section>
-            <h2 className="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Afinidades</h2>
-            <div className="text-slate-300 space-y-2 text-lg">
-              <p><strong className="text-green-400">Melhores:</strong> Goblin Civilizado, Espreitador das Sombras.</p>
-              <p><strong className="text-red-400">Piores:</strong> Anão, Draconato.</p>
+            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Afinidades</h2>
+            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            <div class="text-slate-300 space-y-2 text-lg">
+              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              <p><strong class="text-green-400">Melhores:</strong> Goblin Civilizado, Espreitador das Sombras.</p>
+              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              <p><strong class="text-red-400">Piores:</strong> Anão, Draconato.</p>
             </div>
           </section>
         </div>
