@@ -6,46 +6,46 @@ interface OrcPageProps {
 
 const OrcPage: React.FC<OrcPageProps> = ({ onBack }) => {
   return (
-    // FIX: Replaced `className` with `class` to satisfy TypeScript compiler.
+    // FIX: Replaced 'className' with 'class' to match expected JSX properties.
     <div class="min-h-screen bg-slate-900 text-white font-sans p-4 sm:p-8">
-      {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+      {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
       <main class="container mx-auto">
         <button
           onClick={onBack}
-          // FIX: Replaced `className` with `class` to satisfy TypeScript compiler.
+          // FIX: Replaced 'className' with 'class' to match expected JSX properties.
           class="mb-8 bg-cyan-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-cyan-600 transition-colors duration-300 flex items-center space-x-2"
         >
-          {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+          {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            {/* FIX: Replaced camelCase SVG props with kebab-case to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced camelCase SVG props with kebab-case. */}
             <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
           </svg>
           <span>Voltar para a Galeria</span>
         </button>
 
-        {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+        {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
         <header class="mb-10">
-            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
             Orc
             </h1>
         </header>
 
-        {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+        {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
         <div class="space-y-12">
           <section>
-            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">História</h2>
-            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <p class="text-slate-300 leading-relaxed text-lg">
               Nascidos para o combate, os Orcs são uma raça movida pela força e pela honra tribal. Eles vivem em clãs nômades nas terras selvagens, onde apenas os mais fortes sobrevivem e lideram. Sua cultura valoriza a proeza em batalha acima de tudo, e sua aparência intimidadora, aliada a uma reputação de brutalidade, faz com que sejam temidos e incompreendidos por quase todas as outras raças. Para um Orc, a vida é uma luta constante por glória, território e respeito.
             </p>
           </section>
 
           <section>
-            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Atributos (15 pontos)</h2>
-            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <ul class="list-disc list-inside text-slate-300 space-y-2 text-lg">
               <li><strong>Força:</strong> 5</li>
               <li><strong>Vigor:</strong> 4</li>
@@ -57,9 +57,9 @@ const OrcPage: React.FC<OrcPageProps> = ({ onBack }) => {
           </section>
 
           <section>
-            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Perícias (50 pontos)</h2>
-            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2 text-slate-300 text-lg">
                 <span><strong>Armas Brancas:</strong> 7</span>
                 <span><strong>Intimidação:</strong> 6</span>
@@ -85,12 +85,12 @@ const OrcPage: React.FC<OrcPageProps> = ({ onBack }) => {
             </div>
           </section>
 
-          {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+          {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
           <section class="grid lg:grid-cols-2 gap-12">
             <div>
-              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <h2 class="text-3xl font-bold text-green-400 mb-4 border-b-2 border-green-500/30 pb-2">Vantagens</h2>
-              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <ul class="list-disc list-inside text-slate-300 space-y-3 text-lg">
                 <li><strong>Força Bruta Excepcional:</strong> Possuem o maior bônus natural em Força, o que lhes permite causar dano massivo com armas corpo a corpo.</li>
                 <li><strong>Resistência de Batalha:</strong> Seu Vigor elevado os torna extremamente resistentes à dor e ao cansaço em combate.</li>
@@ -98,9 +98,9 @@ const OrcPage: React.FC<OrcPageProps> = ({ onBack }) => {
               </ul>
             </div>
             <div>
-              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <h2 class="text-3xl font-bold text-red-400 mb-4 border-b-2 border-red-500/30 pb-2">Desvantagens</h2>
-              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <ul class="list-disc list-inside text-slate-300 space-y-3 text-lg">
                 <li><strong>Intelecto e Sociabilidade Baixos:</strong> Possuem grande dificuldade em tarefas que exigem raciocínio complexo ou delicadeza social.</li>
                 <li><strong>Reputação Terrível:</strong> São vistos como monstros pela maioria das outras raças, dificultando qualquer tipo de interação pacífica.</li>
@@ -110,13 +110,13 @@ const OrcPage: React.FC<OrcPageProps> = ({ onBack }) => {
           </section>
 
           <section>
-            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Afinidades</h2>
-            {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <div class="text-slate-300 space-y-2 text-lg">
-              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <p><strong class="text-green-400">Melhores:</strong> Minotauro, Goblin.</p>
-              {/* FIX: Replaced `className` with `class` to satisfy TypeScript compiler. */}
+              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <p><strong class="text-red-400">Piores:</strong> Elfo, Anão, Humano.</p>
             </div>
           </section>
