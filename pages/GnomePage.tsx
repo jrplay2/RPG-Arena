@@ -1,3 +1,4 @@
+// Fix: Replaced `className` with `class` and updated SVG attributes to use kebab-case instead of camelCase to align with the expected JSX transform.
 import React from 'react';
 
 interface GnomePageProps {
@@ -6,46 +7,34 @@ interface GnomePageProps {
 
 const GnomePage: React.FC<GnomePageProps> = ({ onBack }) => {
   return (
-    // FIX: Replaced 'className' with 'class' to match expected JSX properties.
     <div class="min-h-screen bg-slate-900 text-white font-sans p-4 sm:p-8">
-      {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
       <main class="container mx-auto">
         <button
           onClick={onBack}
-          // FIX: Replaced 'className' with 'class' to match expected JSX properties.
           class="mb-8 bg-cyan-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-cyan-600 transition-colors duration-300 flex items-center space-x-2"
         >
-          {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            {/* FIX: Replaced camelCase SVG props with kebab-case. */}
             <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
           </svg>
           <span>Voltar para a Galeria</span>
         </button>
 
-        {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
         <header class="mb-10">
-            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400">
             Gnomo
             </h1>
         </header>
 
-        {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
         <div class="space-y-12">
           <section>
-            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">História</h2>
-            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <p class="text-slate-300 leading-relaxed text-lg">
               Gnomos são uma raça pequena e engenhosa, obcecados por invenções, alquimia e conhecimento. Suas cidades são maravilhas de engenharia, muitas vezes escondidas em colinas ou florestas densas. São curiosos por natureza, mas também cautelosos, usando sua inteligência e ilusões para se proteger de ameaças. Amam uma boa piada e quebra-cabeças, mas podem ser vistos como excêntricos ou até mesmo perigosos por outras raças devido aos seus experimentos imprevisíveis.
             </p>
           </section>
 
           <section>
-            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Atributos (15 pontos)</h2>
-            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <ul class="list-disc list-inside text-slate-300 space-y-2 text-lg">
               <li><strong>Inteligência:</strong> 5</li>
               <li><strong>Destreza:</strong> 3</li>
@@ -57,9 +46,7 @@ const GnomePage: React.FC<GnomePageProps> = ({ onBack }) => {
           </section>
 
           <section>
-            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Perícias (50 pontos)</h2>
-            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-2 text-slate-300 text-lg">
                 <span><strong>Conhecimento (Arcano):</strong> 6</span>
                 <span><strong>Ofício:</strong> 6</span>
@@ -85,12 +72,9 @@ const GnomePage: React.FC<GnomePageProps> = ({ onBack }) => {
             </div>
           </section>
 
-          {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
           <section class="grid lg:grid-cols-2 gap-12">
             <div>
-              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <h2 class="text-3xl font-bold text-green-400 mb-4 border-b-2 border-green-500/30 pb-2">Vantagens</h2>
-              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <ul class="list-disc list-inside text-slate-300 space-y-3 text-lg">
                 <li><strong>Intelecto Superior:</strong> Possuem um bônus natural em Inteligência, tornando-os mestres em magias, invenções e resolução de problemas.</li>
                 <li><strong>Afinidade com Invenções:</strong> Sua perícia em Ofício é inata, permitindo-lhes criar engenhocas, poções e itens mágicos com mais facilidade.</li>
@@ -99,9 +83,7 @@ const GnomePage: React.FC<GnomePageProps> = ({ onBack }) => {
               </ul>
             </div>
             <div>
-              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <h2 class="text-3xl font-bold text-red-400 mb-4 border-b-2 border-red-500/30 pb-2">Desvantagens</h2>
-              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <ul class="list-disc list-inside text-slate-300 space-y-3 text-lg">
                 <li><strong>Fragilidade Física:</strong> Sua baixa Força e Vigor os tornam extremamente vulneráveis em combate direto, dependendo de sua astúcia para sobreviver.</li>
                 <li><strong>Curiosidade Perigosa:</strong> Sua sede insaciável por conhecimento pode levá-los a situações de grande risco sem a devida cautela.</li>
@@ -110,13 +92,9 @@ const GnomePage: React.FC<GnomePageProps> = ({ onBack }) => {
           </section>
 
           <section>
-            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <h2 class="text-3xl font-bold text-cyan-300 mb-4 border-b-2 border-cyan-500/30 pb-2">Afinidades</h2>
-            {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
             <div class="text-slate-300 space-y-2 text-lg">
-              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <p><strong class="text-green-400">Melhores:</strong> Anão, Halfling.</p>
-              {/* FIX: Replaced 'className' with 'class' to match expected JSX properties. */}
               <p><strong class="text-red-400">Piores:</strong> Orc, Minotauro.</p>
             </div>
           </section>
