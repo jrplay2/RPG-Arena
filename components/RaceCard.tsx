@@ -17,7 +17,7 @@ const RaceCard: React.FC<RaceCardProps> = ({ race, onRaceClick }) => {
     >
       <div className="relative">
         <img
-          className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110"
+          className="w-full h-56 sm:h-72 lg:h-80 object-contain sm:object-cover object-center bg-black transition-transform duration-300 sm:group-hover:scale-110"
           src={race.imageUrl}
           alt={`Imagem da raça ${race.name}`}
         />
