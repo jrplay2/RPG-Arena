@@ -1,4 +1,4 @@
-// Fix: Replaced `className` with `class` and updated SVG attributes to use kebab-case instead of camelCase to align with the expected JSX transform.
+// Use React-compliant className attributes.
 import React, { useRef } from 'react';
 import { Magic } from '../types.ts';
 
@@ -31,23 +31,23 @@ const MagicCard: React.FC<MagicCardProps> = ({ magic, onClick, onImageUpload }) 
   
   return (
     <div
-      class="group bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-purple-500/50 transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer"
+      className="group bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:shadow-purple-500/50 transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer"
       onClick={() => onClick(magic.name)}
     >
-      <div class="relative">
+      <div className="relative">
         <img
-          class="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110"
+          className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-110"
           src={magic.imageUrl}
           alt={`Imagem da magia ${magic.name}`}
         />
-        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
         <button
           onClick={handleUploadClick}
           title="Alterar imagem"
-          class="absolute top-3 right-3 bg-slate-900/60 hover:bg-cyan-500 text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 opacity-50 group-hover:opacity-100"
+          className="absolute top-3 right-3 bg-slate-900/60 hover:bg-cyan-500 text-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 opacity-50 group-hover:opacity-100"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width={2} d="M12 4v16m8-8H4" />
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
           </svg>
         </button>
         <input
@@ -55,11 +55,11 @@ const MagicCard: React.FC<MagicCardProps> = ({ magic, onClick, onImageUpload }) 
           ref={fileInputRef}
           onChange={handleFileChange}
           accept="image/*"
-          class="hidden"
+          className="hidden"
         />
       </div>
-      <div class="p-6">
-        <h3 class="text-2xl font-bold text-white text-center tracking-wider">{magic.name}</h3>
+      <div className="p-6">
+        <h3 className="text-2xl font-bold text-white text-center tracking-wider">{magic.name}</h3>
       </div>
     </div>
   );
